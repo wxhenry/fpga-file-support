@@ -39,7 +39,8 @@
                     ".vh",
                     ".sv",
                     ".svh"
-                ]
+                ],
+                "configuration": "./language-configuration.json"
             },
             {
                 "id": "tcl",
@@ -49,85 +50,80 @@
                 ],
                 "extensions": [
                     ".tcl"
-                ]
+                ],
+                "configuration": "./language-configuration-tcl.json"
             },
             {
                 "id": "sdc",
                 "aliases": [
-                    "Synopsys Design Constraints",
                     "sdc"
                 ],
                 "extensions": [
                     ".sdc"
-                ]
+                ],
+                "configuration": "./language-configuration.json"
             },
             {
                 "id": "xdc",
                 "aliases": [
-                    "Xilinx Design Constraints",
                     "xdc"
                 ],
                 "extensions": [
                     ".xdc"
-                ]
+                ],
+                "configuration": "./language-configuration.json"
             },
             {
                 "id": "ucf",
                 "aliases": [
-                    "Xilinx UCF Constraints",
                     "ucf"
                 ],
                 "extensions": [
                     ".ucf"
-                ]
+                ],
+                "configuration": "./language-configuration.json"
             },
             {
                 "id": "cst",
                 "aliases": [
-                    "Lattice CST Constraints",
                     "cst"
                 ],
                 "extensions": [
                     ".cst"
-                ]
+                ],
+                "configuration": "./language-configuration.json"
             }
         ],
         "grammars": [
             {
                 "language": "verilog",
                 "scopeName": "source.verilog",
-                "path": "./syntaxes/verilog.tmLanguage",
-                "configuration": "./language-configuration.json"
+                "path": "./syntaxes/verilog.tmLanguage"
             },
             {
                 "language": "tcl",
                 "scopeName": "source.tcl",
-                "path": "./syntaxes/tcl.tmLanguage.json",
-                "configuration": "./language-configuration-tcl.json"
+                "path": "./syntaxes/tcl.tmLanguage.json"
             },
             {
                 "language": "sdc",
                 "scopeName": "source.sdc",
-                "path": "./syntaxes/sdc.tmLanguage.json",
-                "configuration": "./language-configuration.json"
+                "path": "./syntaxes/sdc.tmLanguage.json"
             },
             {
                 "language": "xdc",
                 "scopeName": "source.xdc",
-                "path": "./syntaxes/xdc.tmLanguage.json",
-                "configuration": "./language-configuration.json"
+                "path": "./syntaxes/xdc.tmLanguage.json"
             },
             {
                 "language": "ucf",
                 "scopeName": "source.ucf",
-                "path": "./syntaxes/ucf.tmLanguage.json",
-                "configuration": "./language-configuration.json"
+                "path": "./syntaxes/ucf.tmLanguage.json"
             },
             {
                 "language": "cst",
                 "scopeName": "source.cst",
-                "path": "./syntaxes/cst.tmLanguage.json",
-                "configuration": "./language-configuration.json"
+                "path": "./syntaxes/cst.tmLanguage.json"
             }
         ]
     },
