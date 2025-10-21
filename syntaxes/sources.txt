@@ -1,0 +1,14 @@
+sdc/xdc:
+https://github.com/mshr-h/vscode-verilog-hdl-support/blob/ed3b8855333366db39c6c31adbc578067793250a/syntaxes/sdc.tmLanguage.json#L4
+
+tcl:
+https://github.com/mshr-h/vscode-verilog-hdl-support/blob/ed3b8855333366db39c6c31adbc578067793250a/syntaxes/tcl.tmlanguage.json#L4
+
+verilog:
+https://github.com/tzyLee/verilog-highlight/blob/1a3cd3c8fca7712b8fdfc7a44fa7f783eeddb0b0/Verilog.tmLanguage#L4
+
+cst:
+https://github.com/1391074994/Verilog-Hdl-Format/blob/8ff3fc50fbaaa57e2ac5977ee695a54a342670ba/syntaxes/cst.tmLanguage.json#L4
+
+ucf:
+https://github.com/mshr-h/vscode-verilog-hdl-support/blob/ed3b8855333366db39c6c31adbc578067793250a/syntaxes/ucf.tmLanguage.json#L4

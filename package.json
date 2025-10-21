@@ -1,0 +1,139 @@
+{
+    "name": "fpga-file-support",
+    "displayName": "FPGA File Support",
+    "description": "Unified syntax highlighting for Verilog, SDC, XDC, UCF, CST, and TCL files.",
+    "version": "1.0.0",
+    "publisher": "wxhenry",
+    "keywords": [
+        "verilog",
+        "systemverilog",
+        "hdl",
+        "sdc",
+        "tcl",
+        "cst",
+        "ucf",
+        "fpga",
+        "asic",
+        "gowin",
+        "xilinx",
+        "高云",
+        "赛灵思"
+    ],
+    "engines": {
+        "vscode": "^1.75.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "license": "MIT",
+    "contributes": {
+        "languages": [
+            {
+                "id": "verilog",
+                "aliases": [
+                    "Verilog HDL",
+                    "verilog"
+                ],
+                "extensions": [
+                    ".v",
+                    ".vh",
+                    ".sv",
+                    ".svh"
+                ]
+            },
+            {
+                "id": "tcl",
+                "aliases": [
+                    "TCL Script",
+                    "tcl"
+                ],
+                "extensions": [
+                    ".tcl"
+                ]
+            },
+            {
+                "id": "sdc",
+                "aliases": [
+                    "Synopsys Design Constraints",
+                    "sdc"
+                ],
+                "extensions": [
+                    ".sdc"
+                ]
+            },
+            {
+                "id": "xdc",
+                "aliases": [
+                    "Xilinx Design Constraints",
+                    "xdc"
+                ],
+                "extensions": [
+                    ".xdc"
+                ]
+            },
+            {
+                "id": "ucf",
+                "aliases": [
+                    "Xilinx UCF Constraints",
+                    "ucf"
+                ],
+                "extensions": [
+                    ".ucf"
+                ]
+            },
+            {
+                "id": "cst",
+                "aliases": [
+                    "Lattice CST Constraints",
+                    "cst"
+                ],
+                "extensions": [
+                    ".cst"
+                ]
+            }
+        ],
+        "grammars": [
+            {
+                "language": "verilog",
+                "scopeName": "source.verilog",
+                "path": "./syntaxes/verilog.tmLanguage",
+                "configuration": "./language-configuration.json"
+            },
+            {
+                "language": "tcl",
+                "scopeName": "source.tcl",
+                "path": "./syntaxes/tcl.tmLanguage.json",
+                "configuration": "./language-configuration-tcl.json"
+            },
+            {
+                "language": "sdc",
+                "scopeName": "source.sdc",
+                "path": "./syntaxes/sdc.tmLanguage.json",
+                "configuration": "./language-configuration.json"
+            },
+            {
+                "language": "xdc",
+                "scopeName": "source.xdc",
+                "path": "./syntaxes/xdc.tmLanguage.json",
+                "configuration": "./language-configuration.json"
+            },
+            {
+                "language": "ucf",
+                "scopeName": "source.ucf",
+                "path": "./syntaxes/ucf.tmLanguage.json",
+                "configuration": "./language-configuration.json"
+            },
+            {
+                "language": "cst",
+                "scopeName": "source.cst",
+                "path": "./syntaxes/cst.tmLanguage.json",
+                "configuration": "./language-configuration.json"
+            }
+        ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/wxhenry/fpga-file-support"
+    },
+    "icon": "icon.png"
+}
