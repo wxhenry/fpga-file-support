@@ -1,8 +1,8 @@
 {
     "name": "fpga-file-support",
     "displayName": "FPGA File Support",
-    "description": "Unified syntax highlighting for Verilog, SDC, XDC, UCF, CST, and TCL files.",
-    "version": "1.0.0",
+    "description": "Unified syntax highlighting for Verilog, SDC, XDC, UCF, CST, and TCL files and code formatting for constraint files.",
+    "version": "1.1.0",
     "publisher": "wxhenry",
     "keywords": [
         "verilog",
@@ -22,10 +22,17 @@
     "engines": {
         "vscode": "^1.75.0"
     },
-    "categories": [
-        "Programming Languages"
+    "main": "./extension.js",
+    "activationEvents": [
+        "onLanguage:sdc",
+        "onLanguage:xdc",
+        "onLanguage:ucf",
+        "onLanguage:cst"
     ],
-    "license": "MIT",
+    "categories": [
+        "Programming Languages",
+        "Formatters"
+    ],
     "contributes": {
         "languages": [
             {
@@ -112,8 +119,8 @@
             },
             {
                 "language": "xdc",
-                "scopeName": "source.xdc",
-                "path": "./syntaxes/xdc.tmLanguage.json"
+                "scopeName": "source.sdc",
+                "path": "./syntaxes/sdc.tmLanguage.json"
             },
             {
                 "language": "ucf",

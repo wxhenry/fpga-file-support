@@ -1,0 +1,36 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Run Extension", // 配置名称，会显示在 VS Code 的调试面板中
+            "type": "extensionHost", // 调试类型：pwa-extensionHost 用于调试扩展宿主
+            "request": "launch", // 请求类型：launch 表示启动一个新的进程
+            "runtimeExecutable": "${execPath}", // 指向当前运行的 VS Code 实例
+            "args": [
+                "--extensionDevelopmentPath=${workspaceFolder}" // 告诉 VS Code 在哪里找到要调试的扩展
+            ],
+            "outFiles": [
+                "${workspaceFolder}/out/**/*.js" // 指定编译后的 JavaScript 文件位置，用于源码映射
+            ],
+            // "preLaunchTask": "npm: watch", // (可选) 在启动调试前自动运行的任务，如编译 TypeScript
+            "smartStep": true, // 跳过被调用库的代码，直接进入用户代码
+            "skipFiles": [
+                "<node_internals>/**"
+            ]
+        },
+        {
+            "name": "Extension Tests",
+            "type": "extensionHost",
+            "request": "launch",
+            "runtimeExecutable": "${execPath}",
+            "args": [
+                "--extensionDevelopmentPath=${workspaceFolder}",
+                "--extensionTestsPath=${workspaceFolder}/out/test/suite/index" // 指向测试入口文件
+            ],
+            "outFiles": [
+                "${workspaceFolder}/out/**/*.js"
+            ],
+            "preLaunchTask": "npm: watch"
+        }
+    ]
+}
