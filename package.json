@@ -2,7 +2,7 @@
     "name": "fpga-file-support",
     "displayName": "FPGA File Support",
     "description": "Unified syntax highlighting for Verilog, SDC, XDC, UCF, CST, and TCL files and code formatting for constraint files.",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "publisher": "wxhenry",
     "keywords": [
         "verilog",
