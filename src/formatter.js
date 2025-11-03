@@ -213,7 +213,7 @@ class FPGAFormatter {
                 // 如果rightPart的第一个是]
                 if (rightPart[0] === ']') {
                     // 匹配数字
-                    const match = leftPart.match(/^(.*?)(\d+)$/);
+                    const match = leftPart.match(/^(.*?)([\d\.]+)$/);
                     if (match) {
                         leftPart = match[1];
                         rightPart = match[2] + rightPart;
